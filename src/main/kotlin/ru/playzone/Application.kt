@@ -14,7 +14,7 @@ import ru.playzone.plugins.*
 fun main() {
 //    Database.connect("jdbc:postgresql://localhost:5432/arslan.a", driver = "org.postgresql.Driver", "arslan.a", password = "123456")
 
-    embeddedServer(Netty, port = System.getenv("PORT").toInt(), module = Application::module)
+    embeddedServer(CIO, module = Application::module)
         .start(wait = true)
 }
 
